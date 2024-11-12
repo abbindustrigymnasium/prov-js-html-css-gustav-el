@@ -7,11 +7,20 @@
 
 <body>
     <!-- Här ska din HTML kod vara -->
-
+<input type="text" id="adress">
+<button onclick="showImage()">run</button>
+<div><img src="" id="bild">
+</div>
     <script>
         // Här ska din JavaScript kod vara
+        function showImage(){
+            let image=document.getElementById("bild"); 
+            let input=document.getElementById("adress")
+            console.log(input.value)
+            image.src=input.value
+        }
 
-
+        
     </script>
 </body>
 
